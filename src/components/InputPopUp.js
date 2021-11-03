@@ -11,7 +11,7 @@ const InputPopUp = ({
     setTexts(
       texts.map(item => {
         if (item.title === withTitle) {
-          return { ...item, currentText: newInput }
+          return { title: item.title, suggestedText: item.suggestedText, currentText: newInput }
         }
         return item
       }),
@@ -40,13 +40,13 @@ const InputPopUp = ({
           const { suggestedText, currentText } = item
           return (
             <div key={item.title}>
-              <div style={{ margin: '3px' }}>{title}</div>
+              <div style={{ margin: '3px' }}>{item.title}</div>
               <input
                 className="text"
                 type="text"
                 placeholder={suggestedText}
                 value={currentText}
-                onChange={event => changeInput(title, event.target.value)}
+                onChange={event => changeInput(item.title, event.target.value)}
                 style={{ margin: '3px' }}
               />
             </div>
