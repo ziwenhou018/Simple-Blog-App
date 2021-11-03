@@ -1,0 +1,23 @@
+.button {
+  font-family: cursive;
+  border-radius: 8px;
+  margin: 4px;
+}
+
+.text {
+  font-family: cursive;
+  border-radius: 8px;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms linear;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}

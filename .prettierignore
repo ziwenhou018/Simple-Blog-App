@@ -1,0 +1,6 @@
+src/components/Profile.js
+src/components/InputPopUp.js
+src/components/Post.js
+src/components/Blog.js
+src/reducers/posts.js
+index.js
